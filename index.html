@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY!!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff0f5;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #ff82ab;
+            font-size: 2.5em;
+            text-shadow: 2px 2px #ffd1dc;
+        }
+        .photo-container {
+    position: relative;
+    width: 300px; /* Memperkecil ukuran foto */
+    height: 300px; /* Mempertahankan aspek rasio foto */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rain-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 2px 100px, 2px 50px;
+    animation: rain 0.5s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0 0, 50px 50px;
+    }
+    100% {
+        background-position: -50px 50px, 0 100px;
+    }
+}
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #ffd1dc;
+            color: #ff1493;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5);
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+        }
+
+        .button:hover {
+            background-color: #ffb6c1;
+            transform: translateY(-10px);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay hidden loop>
+    <source src="audio/lagu.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <h1>HAPPY BIRTHDAY LOVIOLA !</h1>
+    <div class="button-container">
+        <a href="olabau/flower.html" class="button">1</a>
+        <a href="violabau/index.html" class="button">2</a>
+        <a href="last.html" class="button">3</a>
+    </div>
+</body>
+</html>

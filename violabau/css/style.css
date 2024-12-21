@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(#e6e0db,#cce3de);
+    /* text-shadow: -2px 3px 3px rgb(255, 255, 255); */
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-ian {
+    width: 50%;
+    border-radius: 50%;
+    border: solid 8px #e2abb6;
+}
+
+.pink-bcg {
+    background: #e2abb6;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.header-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.img-gift {
+    width: 400px;
+    height: 400px;
+    background-image: url("../img/gift.jpg");
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    border: solid 8px #e2abb6;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gift-sec {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.gift-sec-subtitle {
+    margin-top: 0;
+}
+
+#gift-1:hover {
+    background-image: url('https://cdn.idntimes.com/content-images/community/2023/10/vs-youtube-nanamikentorawscenesclipsforedits-001-cba7975731bdddc3b56ac3c4125a1c91-27674aee1ab49d1a3d32d1a2862a3b07.jpg');
+}
+
+#gift-2:hover {
+    background-image: url('https://i.pinimg.com/originals/54/ef/be/54efbe41a8e81cebf4ff119aca2b7259.jpg');
+}
+
+#gift-3:hover {
+    background-image: url('https://static.zerochan.net/Nanami.Kento.full.4038891.jpg');
+}
+
+#gift-4:hover {
+    background-image: url('https://staticg.sportskeeda.com/editor/2023/11/b5a60-17007724765253-1920.jpg');
+}
+
+.footer-link {
+    color: inherit;
+}
+
